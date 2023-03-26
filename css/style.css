@@ -182,7 +182,7 @@ body { opacity: 0; -webkit-animation: pagefadein 2s ease forwards; animation: pa
 .container { position: relative; z-index: 5; }
 
 .logo-wrap { text-align: center; z-index: 100; background:#11172b; padding: 25px 0; position: relative; }
-.logo-wrap img { width: 200px; display:block; }
+.logo-wrap img { width: 150px; display:block; }
 
 .banner-ctn-area { padding-right: 150px; }
 .TopBanner-section { background-position: top center; padding-top: 100px; padding-bottom: 100px; position: relative; }
@@ -384,7 +384,7 @@ body { opacity: 0; -webkit-animation: pagefadein 2s ease forwards; animation: pa
     h1, h1 strong { font-size: 55px; }
     .TopBanner-section { text-align: center; padding-top: 50px; padding-bottom: 50px; }
     .logo-wrap { padding: 15px 0; }
-    .logo-wrap img { width: 180px; margin: 0 auto; padding-bottom:10px}
+    .logo-wrap img { width: 100px; margin: 0 auto; padding-bottom:10px}
     .tes_wrap { padding: 30px 20px 100px 20px; }
     .benefits-section { padding: 50px 0; }
     .col-6 { width: 100%; }
