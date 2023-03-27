@@ -383,8 +383,8 @@ body { opacity: 0; -webkit-animation: pagefadein 2s ease forwards; animation: pa
     .banner-ctn-area { padding-right: 0 } 
     h1, h1 strong { font-size: 55px; }
     .TopBanner-section { text-align: center; padding-top: 50px; padding-bottom: 50px; }
-    .logo-wrap { padding: 15px 0;height: 165px; }
-    .logo-wrap img { width: 100px; margin: 0 auto; padding-bottom:10px}
+    .logo-wrap { padding: 0px;height: 170px; }
+    .logo-wrap img { width: 100px; margin: 0 auto; padding-bottom:10px;height: 40px !important}
     .tes_wrap { padding: 30px 20px 100px 20px; }
     .benefits-section { padding: 50px 0; }
     .col-6 { width: 100%; }
