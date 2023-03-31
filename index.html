@@ -97,6 +97,15 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <!-- main style css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+        <style>
+
+        @media (max-width: 767px) {
+
+        }
+</style>
+
+
 </head>
 
 <body>
@@ -139,58 +148,19 @@
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav main-menu ml-auto">
-                                        <li class="menu_has_children"><a href="#0">Home</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="index.html">Home One</a></li>
-                                                <li><a href="index-two.html">Home Two</a></li>
-                                                <li><a href="index-dark.html">Home Dark</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="about.html">About Us</a></li>
-                                        <li class="menu_has_children"><a href="#0">Pages</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="service.html">Service</a></li>
-                                                <li><a href="service-details.html">Service Details</a></li>
-                                                <li><a href="deals.html">Deals</a></li>
-                                                <li><a href="deals-details.html">Deals Details</a></li>
-                                                <li><a href="package.html">Package</a></li>
-                                                <li><a href="package-details.html">Package Details</a></li>
-                                                <li><a href="course.html">Our Course</a></li>
-                                                <li><a href="course-details.html">Course Details</a></li>
-                                                <li><a href="team.html">Our Team</a></li>
-                                                <li><a href="team-details.html">Team Details</a></li>
-                                                <li><a href="faq.html">FAQ</a></li>
-                                                <li><a href="register.html">Sign Up</a></li>
-                                                <li><a href="login.html">Sign In</a></li>
-                                                <li><a href="404.html">404 Page</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="menu_has_children"><a href="#0">Blog</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="blog.html">Blog</a></li>
-                                                <li><a href="blog-classic.html">Blog Classic</a></li>
-                                                <li><a href="blog-details.html">Blog Details</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="faq.html">Faq</a></li>
-                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="tel:+18335462409">Book New Flight</a></li>
+                                        <li><a href="tel:+18335462409">Change Date</a></li>
+                                        <li><a href="tel:+18335462409">Cancel Flight</a></li>
+                                        <li><a href="tel:+18335462409">Contact Us</a></li>
                                     </ul>
                                     <div class="header-right">
                                         <div class="search-bar d-none d-lg-block">
-                                            <a href="#0"><i class="fas fa-search"></i></a>
-                                            <div class="header-top-search-area">
-                                                <form class="header-search-form"
-                                                    action="https://gamblingscript.com/search" method="GET">
-                                                    <input type="search" name="keyword" id="header_search"
-                                                        placeholder="Search Product...">
-                                                    <button class="header-search-btn"><i
-                                                            class="fas fa-search"></i></button>
-                                                </form>
-                                            </div>
+                                            <a href="#0">
+                                                <!-- <i class="fas fa-search"></i> -->
+                                            </a>
                                         </div>
                                         <div class="header-action-area">
-                                            <a href="tel:+18335462409" class="action-btn two"><i
-                                                    class="icon-btn-icon"></i></a>
+                                            <a href="tel:+18335462409" class="action-btn two" style="width: auto;height: auto;padding: 5px 20px;"><i class="icon-btn-icon" ></i>  Book Now</a>
                                             <div class="header-action">
                                                 <a href="tel:+18335462409" class="btn--base"><i class="icon-btn-icon"></i> Book Now</a>
                                             </div>
@@ -211,7 +181,9 @@
         <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
         Start Banner
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+    
         <section class="banner-section">
+
             <div class="banner-element" data-aos="fade-left" data-aos-duration="1200">
                 <img src="assets/images/element/element-1.png" alt="element">
             </div>
@@ -224,11 +196,34 @@
             <div class="banner-element-four">
                 <img src="assets/images/element/element-5.png" alt="element">
             </div>
+            <div class="row justify-content-center mt-10-none mb-10-none">
+                    <div class="col-xl-12 text-center">
+                        <div class="brand-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="brand-item">
+                                        <img src="american_logo.svg" alt="brand">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-item">
+                                        <img src="united_logo1.svg" alt="brand">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="brand-item">
+                                        <img src="delta_logo.png" alt="brand">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center mb-30-none">
                     <div class="col-xxl-5 col-xl-6 col-lg-12 mb-30">
                         <div class="banner-content" data-aos="fade-right" data-aos-duration="1800">
-                            <span class="sub-title"><span>FlyAir</span>Booking</span>
+                            <span class="sub-title" style="display: flex;"><span>FlyAir</span>Booking <a href="tel:+18335462409" class="btn--base w-100 mt-10" style="border-radius: 21px;margin: 0px 20px;max-width: max-content;padding: 3px 20px;"><i class="icon-btn-icon"></i> Book On Call</a></span> 
                             <h1 class="title">Travel More, Spend Less</h1>
                             <p>Let your wanderlust take flight with our air travel booking.</p>
                             <div class="banner-btn">

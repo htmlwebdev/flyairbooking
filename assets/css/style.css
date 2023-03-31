@@ -3537,10 +3537,7 @@ section {
 --------------------------------------------------------------*/
 .banner-section {
   position: relative;
-  padding-top: 295px;
-  padding-bottom: 235px;
-  padding-left: 200px;
-  padding-right: 200px;
+  padding: 140px 100px;
   background-color: #19232d;
   overflow: hidden;
   z-index: 9;
@@ -3552,7 +3549,7 @@ section {
 }
 @media only screen and (max-width: 1317px) {
   .banner-section {
-    padding-top: 165px;
+    padding-top: 80px;
     padding-bottom: 90px;
     padding-left: 30px;
     padding-right: 30px;
