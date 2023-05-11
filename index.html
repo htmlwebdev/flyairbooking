@@ -10,6 +10,7 @@
 		<link rel="icon" style="x-icon" href="favicon.png">
 		<!-- Jquery -->
 		<script src="js/jquery-3.6.1.min.js"></script>
+
 		<!-- Normalize CSS -->
 		<link rel="stylesheet" href="css/normalize.min.css">
 		<!-- Custom CSS -->
@@ -33,7 +34,7 @@
 
 					</div>
 					<div>
-						<a href="tel:+18557382852" class="btn-s tb-cta animated infinite pulse">Call now</a>
+						<a href="tel:+" class="btn-s tb-cta animated infinite pulse" id='num_href1'>Call now</a>
 					</div>
 				</div>
 				<div class="next-hide">
@@ -76,18 +77,43 @@
 					An agent is ready for you
 					</div>
 					<div class="main-sh c1 c-util">click the button below to initiate the call!</div>
-					<a href="tel:+18557382852" class="btn-s c2 btn-wt c-util hover-dark center panel-cta"  style="border-radius: 20px;"><span>Get Started</span></a>
+					<a href="tel:+" class="btn-s c2 btn-wt c-util hover-dark center panel-cta"  style="border-radius: 20px;" id='num_href2'><span>Get Started</span></a>
 				</div>
 				<div class="panel style1 alter">
 					<div class="panel-h">Get 1st rate service for stress-free travel</div>
 					<div class="p">We partner with America's most respected airlines to provide a flexible and enjoyable travel management experience.<br/>
 					By speaking to a customer service agent, you receive the best possible service while booking or changing your flight.</div><br/><br/>
 
-					<a href="tel:+18557382852" class="btn-s c2 btn-wt c-util hover-dark center panel-cta  animated infinite pulse"  style="border-radius: 20px;">Call Now<br/><span>+1 (855) 738- 2852</span></a>
+					<a href="tel:+" class="btn-s c2 btn-wt c-util hover-dark center panel-cta  animated infinite pulse"  style="border-radius: 20px;" id='num_href3'>Call Now<br/><span id='num_clear'></span></a>
 				</div>
 			</div>
 
 		</div>
+		<script type="text/javascript">
+			function parse_number(string) {
+			  return `+${string.slice(0,-10)} (${string.slice(-10,-7)}) ${string.slice(-7,-4)}- ${string.slice(-4)}`;
+				}
+				var page_name='homepage'
+
+				$.ajax({
+			    url: `https://docs.google.com/a/google.com/spreadsheets/d/1-ZnnJREUB3qt54FlkEgkGOaaG5_Q5QtOOg0Bh9eLmV8/gviz/tq?tq=select%20*%20where%20A%20%3D%20%27${page_name}%27`,
+			    type: "get",
+			   success:function(data){
+		   			var number = JSON.parse(data.split('(')[1].split(')')[0])['table']['rows'][0]['c'][1]['v'];
+		   			console.log(`number is: ${number}`);
+		   			$('#num_href1').attr('href', `tel:+${number}`);
+		   			$('#num_href2').attr('href', `tel:+${number}`);
+		   			$('#num_href3').attr('href', `tel:+${number}`);
+
+		   			$("#num_clear").html(parse_number(`${number}`));
+			  }
+			  
+		});
+
+
+
+
+	</script>
 		<div class="section footer c1 c-util">
 			<div class="cw">
 				<div class="p">Disclaimer:</div>
